@@ -4,33 +4,7 @@
     <script src="js/popcorn.js"></script>
     <script src="js/popcorn.code.js"></script>
     <script src="js/silence.js"></script>
-    <script type="text/javascript">
-    
-      document.addEventListener("DOMContentLoaded", function () {
-      
-      	var x = new Silence(10);
-      	x.elem.controls = true;
-      	x.elem.id = 'silence';
-      	document.body.appendChild(x.elem);
-      	
-      	var pop = Popcorn('#silence')
-      	
-      	.code({
-            start: 2,
-            end: 3,
-            onStart: function (options) {
-                console.log('start at 2')
-            },
-            onEnd: function (options) {
-                console.log('end at 3')
-            }
-        })
-      	
-      	pop.play();
-      	
-      })
-      
-    </script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <h1>Silence</h1>
